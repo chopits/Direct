@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "direct",
+  "version": "${version}",
+  "name": "Direct",
+  "description": "A hacker that replaces the graphics API used by Minecraft from OpenGL to Direct3D.",
+  "authors": [
+    "Chopits"
+  ],
+  "contact": {
+    "website": "www.chopits.com"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/direct/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "per.chopits.direct.client.DirectClient"
+    ],
+    "main": [
+      "per.chopits.direct.Direct"
+    ]
+  },
+  "mixins": [
+    "direct.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "minecraft": "1.18.2"
+  }
+}
